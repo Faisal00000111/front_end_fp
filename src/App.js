@@ -3,9 +3,9 @@ import Feed from "./Components/Feed";
 
 function App() {
   return (
-    <>
+    <Box>
       <Feed />
-    </>
+    </Box>
   );
 }
 

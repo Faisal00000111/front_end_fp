@@ -186,7 +186,7 @@ const Feed = () => {
           score: result?.confidence?.score,
           comment: result?.confidence?.comment,
         },
-      }
+      };
       const docRef = await addDoc(collection(db, "Users"), data);
       console.log("Document written with ID: ", docRef.id);
     }
@@ -220,7 +220,7 @@ const Feed = () => {
         <Box p={1}>
           <Card>
             <CardContent>
-              <VPN />
+              <VPN ipInfo={ipInfoCurrent}/>
             </CardContent>
           </Card>
         </Box>
